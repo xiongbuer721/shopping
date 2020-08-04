@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情- 正品低价、品质保障、配送及时、轻松购物！</title>
+    <meta name="description" content="宅易购 -专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!">
+    <meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡">
+    <link rel="shortcut icon" href="logo.ico">
+    <!-- <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+
+
+    <!-- 引入初始化文件 -->
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- 引入首页的css文件 -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="stylesheet" href="./css/detail.css">
+
+
+
+
+</head>
+
+<body>
+
+
+    <!--快捷导航模块start-->
+    <section class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li>宅易购欢迎您！&nbsp;</li>
+                    <li>
+                        <a href="javascript：;">请登录&nbsp;</a><a href="register.html" class="style_red">免费注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li>我的订单</li>
+                    <li></li>
+                    <li class="arrow-icon">我的宅易购</li>
+                    <li></li>
+                    <li>宅易购会员</li>
+                    <li></li>
+                    <li>企业宅易购</li>
+                    <li></li>
+                    <li class="arrow-icon">关注宅易购</li>
+                    <li></li>
+                    <li class="arrow-icon">客户服务</li>
+                    <li></li>
+                    <li class="arrow-icon">网站导航</li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--快捷导航模块end-->
+    <!--header头部模块制作start-->
+    <header class="header w">
+        <!-- logo模块 -->
+        <div class="logo">
+            <h1>
+                <a href="index.html" title="宅易购商城">宅易购商城</a>
+            </h1>
+        </div>
+        <!-- search搜索模块 -->
+        <div class="search">
+            <input type="search" name="" id="" placeholder="笔记本">
+            <button>搜 索</button>
+        </div>
+        <div class="hotwords">
+            <a href="javascript:;" class='style_red'>满199减120</a>
+            <a href="javascript:;">二手手机</a>
+            <a href="javascript:;">办公用品</a>
+            <a href="javascript:;">电蚊香</a>
+            <a href="javascript:;">品质家纺</a>
+            <a href="javascript:;">满千减百</a>
+            <a href="javascript:;">vivo X50</a>
+        </div>
+        <!-- 购物车模块 -->
+        <div class="shopcar">
+            我的购物车
+            <i class="count">8</i>
+        </div>
+    </header>
+    <!--header头部模块制作end-->
+    <!-- nav模块制作start -->
+    <nav class="nav" style="display:none">
+        <div class="w">
+            <div class="dropdown">
+                <div class="dt"> 全部商品分类</div>
+                <div class="dd">
+                    <ul>
+                        <li><a href="javascript:;">家用电器</a></li>
+                        <li><a href="javascript:;">手机</a> <span class="cate_menu_line">/</span><a href="javascript:;">运营商</a> <span class="cate_menu_line">/</span><a href="javascript:;">数码</a></li>
+                        <li><a href="javascript:;">电脑</a> <span class="cate_menu_line">/</span><a href="javascript:;">办公</a></li>
+                        <li><a href="javascript:;">家居</a> <span class="cate_menu_line">/</span><a href="javascript:;">家装</a> <span class="cate_menu_line">/</span><a href="javascript:;">厨具</a> <span class="cate_menu_line">/</span><a href="javascript:;">厨具</a></li>
+                        <li><a href="javascript:;">男装</a> <span class="cate_menu_line">/</span><a href="javascript:;">女装</a> <span class="cate_menu_line">/</span><a href="javascript:;">童装</a> <span class="cate_menu_line">/</span><a href="javascript:;">内衣</a>
+
+                        </li>
+                        <li><a href="javascript:;">美妆</a> <span class="cate_menu_line">/</span><a href="javascript:;">个护清洁</a> <span class="cate_menu_line">/</span><a href="javascript:;">宠物</a></li>
+                        <li><a href="javascript:;">女鞋</a> <span class="cate_menu_line">/</span><a href="javascript:;">箱包</a> <span class="cate_menu_line">/</span><a href="javascript:;">钟表</a> <span class="cate_menu_line">/</span><a href="javascript:;">珠宝</a></li>
+                        <li><a href="javascript:;">男鞋</a> <span class="cate_menu_line">/</span><a href="javascript:;">运动</a> <span class="cate_menu_line">/</span><a href="javascript:;">户外</a></li>
+                        <li><a href="javascript:;">房产</a> <span class="cate_menu_line">/</span><a href="javascript:;">汽车</a> <span class="cate_menu_line">/</span><a href="javascript:;">汽车用品</a></li>
+                        <li><a href="javascript:;">母婴</a> <span class="cate_menu_line">/</span><a href="javascript:;">玩具乐器</a></li>
+                        <li><a href="javascript:;">食品</a> <span class="cate_menu_line">/</span><a href="javascript:;">酒类</a> <span class="cate_menu_line">/</span><a href="javascript:;">生鲜</a> <span class="cate_menu_line">/</span><a href="javascript:;">特产</a></li>
+                        <li><a href="javascript:;">艺术</a> <span class="cate_menu_line">/</span><a href="javascript:;">礼品鲜花</a> <span class="cate_menu_line">/</span><a href="javascript:;">农资绿植</a></li>
+                        <li><a href="javascript:;">医药保健</a> <span class="cate_menu_line">/</span><a href="javascript:;">计生情趣</a></li>
+                        <li><a href="javascript:;">图书</a> <span class="cate_menu_line">/</span><a href="javascript:;">文娱</a> <span class="cate_menu_line">/</span><a href="javascript:;">教育</a> <span class="cate_menu_line">/</span><a href="javascript:;">电子书</a></li>
+                        <li><a href="javascript:;">机票</a> <span class="cate_menu_line">/</span><a href="javascript:;">酒店</a> <span class="cate_menu_line">/</span><a href="javascript:;">旅游</a> <span class="cate_menu_line">/</span><a href="javascript:;">生活</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="navitems">
+                <ul>
+                    <li><a href="./seckill.html" class="style_red">秒杀</a></li>
+                    <li><a href="javascript:;">优惠券</a></li>
+                    <li><a href="javascript:;">品牌闪购</a></li>
+                    <li><a href="javascript:;">会员</a></li>
+                    <li><a href="javascript:;">超市</a></li>
+                    <li><a href="javascript:;">家电</a></li>
+                    <li><a href="javascript:;">生鲜</a></li>
+                    <li><a href="javascript:;">国际</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav模块制作end -->
+    <!-- 详情页内容部分start -->
+    <div class="do_container w">
+        <div class="crumb_wrap">
+            <a href="#">食品饮料</a>>
+            <a href="#">茗茶</a>>
+            <a href="#">绿茶</a>>
+            <a href="#">其他绿茶 </a>>
+
+        </div>
+        <!-- 产品介绍模块 -->
+        <div class="product_intro clearfix">
+            <!-- 预览区域 -->
+            <div class="preview_wrap fl">
+                <div class="preview_img">
+                    <img src="./upload/tea1.jpg" alt="">
+                    <div class="mask">
+
+                    </div>
+                    <div class="big"><img src="./upload/tea1.jpg" alt="" style="width: 700px" class="bigImg"></div>
+                </div>
+                <div class="preview_list">
+                    <a href="#" class="arrow-prew">
+
+                    </a>
+                    <a class="arrow-next" href="javascript:;">
+
+                    </a>
+                    <div class="pre-items">
+                        <ul class="list_item">
+                            <li> <img src="./upload/img01.jpg" alt=""></li>
+                            <li><img src="./upload/img02.jpg" alt=""></li>
+                            <li><img src="./upload/img03.jpg" alt=""></li>
+                            <li><img src="./upload/img04.jpg" alt=""></li>
+                            <li><img src="./upload/img05.jpg" alt=""></li>
+                            <li><img src="./upload/img06.jpg" alt=""></li>
+                            <li><img src="./upload/img07.jpg" alt=""></li>
+                            <li><img src="./upload/img08.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 产品详细信息 -->
+            <div class="itemInfo_wrap fr">
+                <div class="sku_name">
+                    【特级茗茶 限量直降】 【限时买一送一】2020新茶特级绿茶嫩芽茶叶 600g礼盒正宗品质茗茶浓香 品质特级绿茶（木桶茶礼装）600g </div>
+                <div class="news">
+                    <div class="item hide" title="【限时买一送一，00点准时开秒】【秒杀99元全球限量发售】特级正宗茗茶嫩芽绿茶，木桶茶礼大份量！2020新茶特惠，售完结束！">
+                        【限时买一送一，00点准时开秒】【秒杀99元全球限量发售】特级正宗茗茶嫩芽绿茶，木桶茶礼大份量！2020新茶特惠，售完结束！
+                    </div>
+                </div>
+                <div class="summary">
+                    <div class="summary_price">
+                        <div class="dt">秒杀价</div>
+                        <div class="dd">
+                            <span class="p-price" style="color: #e4393c">
+                            <span>￥</span>
+                            <span class="price-now">99.00</span>
+                            </span>
+                            <span class="pricing">
+                            [
+                            <del id="page_origin_price">￥329
+
+                            </del>
+                            ]
+                        </span>
+                            <a href="#">降价通知</a>
+                            <div class="remark">累积评价
+                                <a href="#">10+</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="summary-promotion">
+                        <div class="dt">促销</div>
+                        <div class="dd">
+                            <em class="h1_red_bg">限购</em>
+                            <em class="h1_red">
+                    × 1  （条件：购买1件及以上，赠完即止）
+                         </em>
+                        </div>
+                    </div>
+
+                    <div class="summary_support">
+                        <div class="dt">服务支持</div>
+                        <div class="dd">送运费险&nbsp;&nbsp; 闪电退款</div>
+                    </div>
+                    <div class="summary p-choose-wrap">
+                        <div class="summary-stock">
+                            <div class="dt">配送至</div>
+                            <div class="dd">
+                                <div class="ui-area-text-wrap">
+                                    <div class="ui-area-text">
+                                        江苏省南京市江宁区
+                                    </div>
+                                    <b></b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose_attrs">
+                        <div class="dt">选择</div>
+                        <div class="dd">
+                            <div class="item">
+                                <a href="">
+                                    <img src="./upload/item1.jpg" alt="">
+                                    <i>品质特级绿茶（木桶茶礼装）600g</i>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href=""><img src="./upload/item1.jpg" alt="">
+                                    <i>特级大红袍（木桶茶礼装）600g</i>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href=""><img src="./upload/item1.jpg" alt="">
+                                    <i>贺卡</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose-fenqi">
+                        <div class="dt">分期</div>
+                        <div class="dd">
+                            <div class="item">
+                                <a href="#"><strong>不分期</strong></a>
+                                <span>无服务费</span>
+                                <div class="baitiao-tips hide">
+                                    <ul>
+                                        <li> 无服务费 </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="#"><strong>￥33x3期</strong></a>
+                                <span>
+                                <em>惠</em>
+                                “0服务费”
+                            </span>
+                                <div class="baitiao-tips hide">
+                                    <ul>
+                                        <li> 无服务费 </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="#"><strong>￥17起x6期</strong></a>
+                                <span>含服务费</span>
+                                <div class="baitiao-tips hide">
+                                    <ul>
+                                        <li> 含服务费：费率0.5%起，￥0.5起x6期 </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="#"><strong>￥8.75起x12期</strong></a>
+                                <span>含服务费</span>
+                                <div class="baitiao-tips hide">
+                                    <ul>
+                                        <li> 含服务费：费率0.5%起，￥0.5起x12期 </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="#"><strong>￥4.51起x24期</strong></a>
+                                <span>含服务费</span>
+                                <div class="baitiao-tips hide">
+                                    <ul>
+                                        <li> 含服务费：费率0.5%起，￥0.5起x12期 </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="choose_btns">
+                        <div class="choose_amount">
+                            <input type="text" value="1">
+                            <a href="javascript:;" class="add">+</a>
+                            <a href="javascript:;" class="reduce">-</a>
+                        </div>
+                        <a href="#" class="addCar">
+                        加入购物车
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 产品细节模块start -->
+        <div class="product_detail clearfix">
+
+            <div class="aside fl">
+                <div class="tab_list">
+                    <ul>
+                        <li class="first_tab selected">店内热销</li>
+                        <li class="second_tab">热门分类</li>
+                    </ul>
+                </div>
+                <div class="tab_con">
+                    <ul>
+                        <li class="fore1">
+                            <a href="javascript:;" title="【爆款限量】【1000g木桶茶礼 品质正宗】2020特级大红袍浓香正宗品质武夷山岩茶肉桂茶乌龙茶礼盒 贺卡 ">
+                                <img src="./upload/ar01.jpg ">
+
+                            </a>
+                            <div class="p-info clearfix">
+                                <div class="p-count fl">
+                                    热销
+                                    <em>26</em>件
+                                </div>
+                                <div class="p-price fr">
+                                    <strong>￥329</strong>
+                                </div>
+
+                            </div>
+                            <div class="p-num1">1</div>
+                        </li>
+                        <li class="fore2">
+                            <a href="javascript:;" title="【特级茗茶 限量直降】 【限时买一送一】2020新茶特级绿茶嫩芽茶叶600g礼盒正宗品质茗茶浓香 浅紫色 ">
+                                <img src="./upload/arr02.jpg ">
+
+                            </a>
+                            <div class="p-info clearfix">
+                                <div class="p-count fl">
+                                    热销
+                                    <em>16</em>件
+                                </div>
+                                <div class="p-price fr">
+                                    <strong>￥329</strong>
+                                </div>
+
+                            </div>
+                            <div class="p-num">2</div>
+                        </li>
+                        <li class="fore3">
+                            <a href="javascript:;" title="【特级茗茶 限量直降】 【限时买一送一】2020新茶特级绿茶嫩芽茶叶600g礼盒正宗品质茗茶浓香 浅紫色 ">
+                                <img src="./upload/arr02.jpg ">
+
+                            </a>
+                            <div class="p-info clearfix">
+                                <div class="p-count fl">
+                                    热销
+                                    <em>13</em>件
+                                </div>
+                                <div class="p-price fr">
+                                    <strong>￥329</strong>
+                                </div>
+
+                            </div>
+                            <div class="p-num">3</div>
+                        </li>
+                        <li class="fore4">
+                            <a href="javascript:;" title="【保价618 款限量1000g 木桶茶 品质正宗】2020特级大红袍浓香正宗品质武夷山肉桂茶乌龙茶 贺卡 ">
+                                <img src="./upload/ar01.jpg ">
+
+                            </a>
+                            <div class="p-info clearfix">
+                                <div class="p-count fl">
+                                    热销
+                                    <em>8</em>件
+                                </div>
+                                <div class="p-price fr">
+                                    <strong>￥329</strong>
+                                </div>
+
+                            </div>
+                            <div class="p-num">4</div>
+                        </li>
+                        <li class="fore5">
+                            <a href="javascript:;" title="【特级茗茶 限量直降】 【限时买一送一】2020新茶特级绿茶嫩芽茶叶600g礼盒正宗品质茗茶浓香 贺卡 ">
+                                <img src="./upload/arr02.jpg ">
+
+                            </a>
+                            <div class="p-info clearfix">
+                                <div class="p-count fl">
+                                    热销
+                                    <em>13</em>件
+                                </div>
+                                <div class="p-price fr">
+                                    <strong>￥329</strong>
+                                </div>
+
+                            </div>
+                            <div class="p-num">5</div>
+                        </li>
+
+
+                    </ul>
+                    <ul class="hide ">
+                        <li>[暂无数据]</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- detail -->
+            <div class="detail fixed fr ">
+                <div class="detail_tab_list">
+                    <ul>
+                        <li class="current">
+                            商品介绍
+                        </li>
+                        <li>
+                            规格与包装
+                        </li>
+                        <li>
+                            售后保障
+                        </li>
+                        <li>
+                            商品评价
+                            <s>0</s>
+                        </li>
+                        <li>
+                            本店好评商品
+                        </li>
+
+                    </ul>
+                    <div class="extra">
+                        <div class="head"><a href="javascript:;">加入购物车</a></div>
+
+                        <div class="content hide">
+                            <div class="p-img fl">
+                                <img src="./upload/img01.jpg" alt="" width="100" height="100">
+                            </div>
+                            <div class="p-info lh">
+                                <div class="p-name">
+                                    【特级茗茶 限量直降】 【限时买一送一】2020新茶特级绿茶嫩芽茶叶600g礼盒正宗品质茗茶浓香 品质特级绿茶（木桶茶礼装）600g
+                                </div>
+                                <div class="p-price">
+                                    <strong>329.00</strong>
+                                    <span>X1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail_tab_con">
+
+                        <div class="p-parameter">
+                            <ul id="parameter-brand" class="p-parameter-list">
+                                <li title="原味林（YUANWEILIN）">品牌： <a href="javascript:;">原味林（YUANWEILIN）</a>
+                                    <!--a href="#none" class="follow-brand btn-def" clstag='shangpin|keycount|product|guanzhupinpai'><b>&hearts;</b>关注 -->
+                                </li>
+                            </ul>
+                            <ul class="parameter2 p-parameter-list">
+                                <li title="【特级茗茶 限量直降】 【限时买一送一】2020新茶特级绿茶嫩芽茶叶600g礼盒正宗品质茗茶浓香 品质特级绿茶（木桶茶礼装）600g">商品名称:【特级茗茶 限量直降】 【限时买一送一】2020新茶特级绿茶嫩芽茶叶600g礼盒正宗品质茗茶浓香 品质特级绿茶（木桶茶礼装）600g</li>
+                                <li title="71848598229">商品编号:71848598229</li>
+                                <li title="缪世休闲食品专营店">店铺： <a href="javascript:;" target="_blank">缪世休闲食品专营店</a></li>
+                                <li title="200.00g">商品毛重：200.00g</li>
+                                <li title="明前">采摘时间：明前</li>
+                                <li title="特级">等级：特级</li>
+                                <li title="半发酵">发酵程度：半发酵</li>
+                                <li title="桶装">包装：桶装</li>
+                                <li title="一芽四五叶">采摘要求：一芽四五叶</li>
+                                <li title="尖形">形状：尖形</li>
+                            </ul>
+                            <p class="more-par">
+                                <a href="#product-detail" class="J-more-param">更多参数<s class="txt-arr">&gt;&gt;</s></a>
+                            </p>
+                        </div>
+                        <div class="detail_con_item">
+                            <p style="text-align: center;">
+                                <img src="./upload/detail01.jpg" alt="">
+                                <img src="./upload/detail02.jpg" alt="">
+                                <img src="./upload/detail03.jpg" alt="">
+                                <img src="./upload/detail04.jpg" alt="">
+
+                                <img src="./upload/detail15.jpg" alt="">
+                                <img src="./upload/detail16.jpg" alt="">
+                                <img src="./upload/detail17.jpg" alt="">
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 产品细节模块 end-->
+        </div>
+    </div>
+    <!-- 详情页内容部分end -->
+    <!-- 底部模块的制作start -->
+    <footer class="footer ">
+        <div class="w ">
+            <div class="mod_service ">
+                <ul>
+                    <li>
+                        <h5></h5>
+                        <div>
+                            <h4 class="service_txts "><strong>正品保障</strong></h4>
+                            <p>正品保障，提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <div>
+                            <h4 class="service_txts "><strong>极速物流</strong></h4>
+                            <p>极速物流,极速到达</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <div>
+                            <h4 class="service_txts "><strong>无忧售后</strong></h4>
+                            <p>7天无理由退换货</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <div>
+                            <h4 class="service_txts "><strong>特色服务</strong></h4>
+                            <p>私人订制家电套餐</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="mod_help ">
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="javascript:; ">购物流程</a></dd>
+                    <dd><a href="javascript:; ">会员介绍</a></dd>
+                    <dd><a href="javascript:; ">生活旅行/团购</a></dd>
+                    <dd><a href="javascript:; ">常见问题</a></dd>
+                    <dd><a href="javascript:; ">大家电</a></dd>
+                    <dd><a href="javascript:; ">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd><a href="javascript:; ">上门自提</a></dd>
+                    <dd><a href="javascript:; ">211限时达</a></dd>
+                    <dd><a href="javascript:; ">配送服务查询</a></dd>
+                    <dd><a href="javascript:; ">常见问题</a></dd>
+                    <dd><a href="javascript:; ">大配送收费标准</a></dd>
+                    <dd><a href="javascript:; ">海外配送</a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><a href="javascript:; ">货到付款</a></dd>
+                    <dd><a href="javascript:; ">在线支付</a></dd>
+                    <dd><a href="javascript:; ">分期付款</a></dd>
+                    <dd><a href="javascript:; ">公司转账</a></dd>
+
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd><a href="javascript:; ">售后政策</a></dd>
+                    <dd><a href="javascript:; ">价格保护</a></dd>
+                    <dd><a href="javascript:; ">退款说明</a></dd>
+                    <dd><a href="javascript:; ">退修、退换货</a></dd>
+                    <dd><a href="javascript:; ">取消订单</a></dd>
+
+                </dl>
+                <dl>
+                    <dt>特色服务</dt>
+                    <dd><a href="javascript:; ">DIY装机</a></dd>
+                    <dd><a href="javascript:; ">延保服务</a></dd>
+                    <dd><a href="javascript:; ">夺宝岛</a></dd>
+                    <dd><a href="javascript:; ">宅易购E卡</a></dd>
+                    <dd><a href="javascript:; ">宅易购通信</a></dd>
+                </dl>
+                <dl>
+                    <dt class="mod_help_cover_tit ">覆盖区县</dt>
+                    <p class="mod_help_cover_info ">宅易购已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+                    <p class="mod_help_cover_more "><a href="javascript " target="_blank " rel="noopener noreferrer ">查看详情</a></p>
+                </dl>
+            </div>
+            <div class="mod_copyright ">
+                <div class="links ">
+                    <a href='javascript:;'>关于我们</a>|
+                    <a href='javascript:;'>联系我们</a>|
+                    <a href='javascript:;'>联系客服</a>|
+                    <a href='javascript:;'>合作招商</a>|
+                    <a href='javascript:;'>商家帮助</a>|
+                    <a href='javascript:;'>营销中心</a>|
+                    <a href='javascript:;'>手机宅易购</a>|
+                    <a href='javascript:;'>友情链接</a>|
+                    <a href='javascript:;'>销售联盟</a>|
+                    <a href='javascript:;'>宅易购社区</a>|
+                    <a href='javascript:;'>风险监测</a>|
+                    <a href='javascript:;'>隐私政策</a>|
+                    <a href='javascript:;'>宅易购公益</a>|
+
+
+                </div>
+                <div class="copyright ">京公网安备 10000000号|京ICP证0777777号|互联网药品信息服务资格证编号(京)-经营性-2014-0008|新出发京零 字第大120007号
+                    <br> 互联网出版许可证编号新出网证(京)字777号|出版物经营许可证|网络文化经营许可证京网文[2014]666-666号|违法和不良信息举报电话：4006561155
+
+                    <br> Copyright © 2004 - 2020 宅易购 版权所有|消费者维权热线：444666666经营证照|(京)网械平台备字(2018)第007号|营业执照
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 底部模块的制作end -->
+    <script src="./js/detail.js"></script>
+</body>
+
+</html>
